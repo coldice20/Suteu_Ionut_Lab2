@@ -1,5 +1,8 @@
-﻿namespace Suteu_Ionut_Lab2.Models
+﻿using Microsoft.AspNetCore.Authorization;
+
+namespace Suteu_Ionut_Lab2.Models
 {
+    [Authorize(Roles = "Admin")]
     public class Publisher
     {
         public int ID { get; set; }
